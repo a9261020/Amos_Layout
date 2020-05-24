@@ -1,5 +1,7 @@
 # 2020-05-21 互動圖文卡片
 
+![成品](./completed.jpg)
+
 ## 重點整理
 
 - transition: width 1s 0.2s

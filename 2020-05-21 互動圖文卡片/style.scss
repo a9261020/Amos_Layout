@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  .item {
+    position: relative;
+    width: 25%;
+    &:hover {
+      h2:after {
+        width: 100%;
+      }
+    }
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    .txt {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.5s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    h2 {
+      font-size: 28px;
+      color: #ff0;
+      font-weight: 500;
+      &:after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        margin: 10px 0;
+        background-color: #ff0;
+        // * 第一個時間是轉場的時間(轉場要花多久跑完)
+        // * 第二個時間是延遲時間(轉場多久後開始)
+        transition: width 1s 0.2s;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 100;
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # 2020-05-24 交錯漂浮版
 
+![成品](./completed.jpg)
+
 ## 重點整理
 
 - background:linear-gradient(角度,顏色 1,顏色 2)位置(center/fixed...) x 軸位置 y 軸位置 / 寬尺寸 高尺寸

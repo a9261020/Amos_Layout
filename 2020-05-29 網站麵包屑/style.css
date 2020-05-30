@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+.wrap .breadcrumb li + li:last-child a, .wrap .breadcrumb li a:hover {
+  color: #ff0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background-color: #562870;
+}
+
+.wrap {
+  padding: 10px 0;
+  background: #ec008b;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.wrap .breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.wrap .breadcrumb li {
+  padding: 0 20px;
+}
+
+.wrap .breadcrumb li + li {
+  padding-left: 0;
+}
+
+.wrap .breadcrumb li + li:before {
+  margin-right: 20px;
+  color: #fff;
+  content: ">";
+}
+
+.wrap .breadcrumb li a {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

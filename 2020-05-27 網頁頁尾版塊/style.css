@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.main__footer {
+  padding: 150px 0 0 0;
+  background: linear-gradient(-20deg, #3f5494, #08c7a5);
+}
+
+.main__footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
+
+.main__footer .container .footer__item {
+  width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 20px;
+}
+
+.main__footer .container .footer__item h4 {
+  font-size: 24px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.main__footer .container .footer__item nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.main__footer .container .footer__item nav a {
+  color: #fff;
+  line-height: 1.4;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.main__footer .container .footer__subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.main__footer .container .footer__subs form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto 0;
+}
+
+.main__footer .container .footer__subs form input[type="text"],
+.main__footer .container .footer__subs form input[type="submit"] {
+  padding: 5px 10px;
+  border: none;
+}
+
+.main__footer .container .footer__subs form input[type="text"] {
+  width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main__footer .container .footer__subs form input[type="submit"] {
+  color: #70f6df;
+  background-color: #3e5293;
+}
+
+.main__footer .copyright {
+  width: 100%;
+  margin: 150px 0 0;
+  padding: 10px 0;
+  background-color: #3e5293;
+  color: #70f6df;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

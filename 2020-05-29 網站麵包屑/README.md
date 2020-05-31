@@ -4,6 +4,42 @@
 
 ## 重點整理
 
-- 要做互動情況的話，要是獨立項目，所以 hover 的那條線只能用:after、:before 去做。
+- 加號符號(+)是會影響到後方同層級的第一個元素，第一個 li::before 之後的的 li::before 都會套用下面的 css
 
-- 想要從中間開始的話，設定定位，讓左右都從 50%開始。
+```css
+.breadcrumb {
+  + li::before {
+    margin-right: 20px;
+    color: #fff;
+    content: ">";
+  }
+}
+```
+
+- 同一個群組的 CSS，可以使用%去宣告變數，用@extend 去使用。
+
+編譯前
+
+```scss
+.txt-yellow {
+  color: #ff0;
+}
+
+li {
+  &:hover {
+    @extend .txt-yellow;
+  }
+  &:last-of-type {
+    @extend .txt-yellow;
+  }
+}
+```
+
+編譯後
+
+```css
+li:hover,
+li:last-of-type {
+  color: #ff0;
+}
+```

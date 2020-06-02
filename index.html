@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrap">
+        <div class="item" v-for="item in data" :key="item">
+          <div class="pic">
+            <a :href=`./${item.index}/index.html` target="_blank"> 
+              <img :src=`./${item.completed}/completed.jpg` alt="" />
+            </a>            
+          </div>
+          <div class="txt">
+            <a :href=`${github}${item.index}` target="_blank">
+              <i class="fab fa-github"></i>
+              {{item.title}}</a>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        github:"https://github.com/a9261020/Amos_Layout/tree/master/",
+        data: [
+          {
+            index: "2020-05-14 圖文滿版區塊",
+            completed: "2020-05-14 圖文滿版區塊",
+            title: "圖文滿版區塊",            
+          },
+          {
+            index: "2020-05-21 互動圖文卡片",
+            completed: "2020-05-21 互動圖文卡片",
+            title: "互動圖文卡片",            
+          },
+          {
+            index: "2020-05-23 人員介紹卡片",
+            completed: "2020-05-23 人員介紹卡片",
+            title: "人員介紹卡片",            
+          },
+          {
+            index: "2020-05-24 交錯漂浮版",
+            completed: "2020-05-24 交錯漂浮版",
+            title: "交錯漂浮版",            
+          },
+          {
+            index: "2020-05-27 網頁頁尾版塊",
+            completed: "2020-05-27 網頁頁尾版塊",
+            title: "網頁頁尾版塊",            
+          },
+          {
+            index: "2020-05-28 導覽列",
+            completed: "2020-05-28 導覽列",
+            title: "導覽列",            
+          },
+          {
+            index: "2020-05-29 導覽列變化",
+            completed: "2020-05-29 導覽列變化",
+            title: "導覽列變化",            
+          },
+          {
+            index: "2020-05-29 網站麵包屑",
+            completed: "2020-05-29 網站麵包屑",
+            title: "網站麵包屑",            
+          },
+          {
+            index: "2020-05-31 方塊酥版面",
+            completed: "2020-05-31 方塊酥版面",
+            title: "方塊酥版面",            
+          },
+          {
+            index: "2020-05-31 破格式設計",
+            completed: "2020-05-31 破格式設計",
+            title: "破格式設計",            
+          },
+        ],
+      },
+    });
+  </script>
+</html>

@@ -25,3 +25,5 @@ div ~ p {
 003 004 都會變成黑色的字體
 
 - float 會將該屬性飄浮起來，所以裡面的容器將偵測不到 float 的物件，必須要用 clear:both，去清除後才有辦法抓到，這邊在父層掛上 overflow:hidden 為偷懶的做法。
+
+> 補充資料：https://audilu.com/2011/02/19/css-overflow-clear-float/

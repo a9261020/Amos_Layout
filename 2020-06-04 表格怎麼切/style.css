@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#3d5894), to(#08c7a5)) fixed;
+  background: linear-gradient(90deg, #3d5894, #08c7a5) fixed;
+}
+
+.table {
+  width: 800px;
+  margin: auto;
+}
+
+.table table {
+  width: 100%;
+  border: 3px double #666;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.table table caption {
+  padding: 10px 0;
+  caption-side: bottom;
+  text-align: right;
+  color: #fff;
+}
+
+.table table caption a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.table table thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.table table thead th:first-child {
+  border-radius: 7px 0 0 0;
+}
+
+.table table thead th:last-child {
+  border-radius: 0 7px 0 0;
+}
+
+.table table tbody tr:nth-child(even) {
+  background-color: #ffa;
+}
+
+.table table tfoot td:first-child {
+  border-radius: 0 0 0 7px;
+}
+
+.table table tfoot td:last-child {
+  border-radius: 0 0 7px 0;
+}
+
+.table table tr th {
+  border: 1px solid #666;
+  padding: 6px 10px;
+}
+
+.table table tr td {
+  border: 1px solid #666;
+  padding: 6px 10px;
+}

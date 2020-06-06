@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #546377;
+}
+
+#side-menu-switch {
+  display: none;
+}
+
+#side-menu-switch:checked + .side-menu {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#side-menu-switch:checked + .side-menu label .fas {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.side-menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  width: 300px;
+  height: 100%;
+  padding: 50px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 0 10px #244255;
+          box-shadow: 5px 0 10px #244255;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3381b0), to(#c2196c));
+  background: linear-gradient(0deg, #3381b0, #c2196c);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.side-menu form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px 50px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+}
+
+.side-menu form input,
+.side-menu form button {
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.side-menu form input:focus,
+.side-menu form button:focus {
+  outline: none;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+.side-menu nav a {
+  display: block;
+  position: relative;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-menu nav a:hover .fas {
+  margin-right: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.side-menu nav a + a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  left: 10px;
+  border-top: 1px solid #fff;
+}
+
+.side-menu nav a .fas {
+  margin-right: -1.1em;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.side-menu label {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  bottom: 0;
+  width: 40px;
+  height: 80px;
+  margin: auto;
+  border-radius: 0 10px 10px 0;
+  background-color: #000;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 80px;
+}

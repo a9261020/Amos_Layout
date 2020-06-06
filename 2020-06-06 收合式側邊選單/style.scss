@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #546377;
+}
+#side-menu-switch {
+  display: none;
+  &:checked + .side-menu {
+    transform: translateX(0);
+    label .fas {
+      transform: rotate(180deg); // * scaleX(-1) 這是amos的做法
+    }
+  }
+}
+
+.side-menu {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  height: 100%;
+  padding: 50px 0;
+  box-sizing: border-box;
+  box-shadow: 5px 0 10px #244255;
+  background: linear-gradient(0deg, #3381b0, #c2196c);
+  transform: translateX(-100%);
+  transition: 0.3s;
+  form {
+    display: flex;
+    margin: 0 10px 50px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    input,
+    button {
+      border: none;
+      padding: 5px 10px;
+      background-color: transparent;
+      color: #fff;
+      &:focus {
+        outline: none;
+      }
+    }
+    input {
+      width: 230px;
+    }
+    button {
+      width: 50px;
+    }
+  }
+  nav {
+    a {
+      display: block;
+      position: relative;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        .fas {
+          margin-right: 0;
+          transform: scale(1);
+        }
+      }
+      & + a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 10px;
+        border-top: 1px solid #fff;
+      }
+      .fas {
+        margin-right: -1.1em;
+        transform: scale(0);
+        transition: 0.3s;
+      }
+    }
+  }
+  label {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    bottom: 0;
+    width: 40px;
+    height: 80px;
+    margin: auto;
+    border-radius: 0 10px 10px 0;
+    background-color: #000;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 80px; // * 設定的跟容器的height一樣，就會變成垂直置中
+  }
+}

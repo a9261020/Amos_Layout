@@ -16,12 +16,13 @@ body {
 body {
   background-color: #546377;
 }
+
 #side-menu-switch {
   display: none;
   &:checked + .side-menu {
     transform: translateX(0);
     label .fas {
-      transform: rotate(180deg); // * scaleX(-1) 這是amos的做法
+      transform: rotate(180deg); // * transform:scaleX(-1) 這是amos的做法
     }
   }
 }

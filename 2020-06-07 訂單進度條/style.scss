@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #546377;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  li {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    // * border: 1px solid #fff; 邊框方法一
+    box-shadow: 0 0 0 4px #fff; // * 邊框方法二
+    border-radius: 50%;
+    background: linear-gradient(9deg, #185a9d, #43cea2);
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    & + li {
+      // * (+)為同層選取器，所以會選到跟前面li同層的li
+      margin-left: 100px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100px;
+        z-index: -1;
+        width: 100px;
+        height: 5px;
+        margin: auto; // * 用margin:auto 來做到垂直置中(上下左右都平均分配)
+        background-color: #43cea2;
+        box-shadow: 0 0 0 3px #fff;
+      }
+    }
+    .fa {
+      font-size: 60px;
+      margin-bottom: 6px;
+    }
+    &.active ~ li {
+      background: linear-gradient(9deg, #999, #ccc);
+      &::before {
+        background-color: #999;
+      }
+    }
+  }
+}

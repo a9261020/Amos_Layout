@@ -25,3 +25,13 @@
 ```
 
 - label 定位在 side-menu 上面
+
+- 確認 input 被 check 的 css 這樣寫
+
+```scss
+input:checked {
+  .checked {
+    color: red;
+  }
+}
+```

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background-color: #edece1;
+}
+
+.wrap {
+  width: 960px;
+  margin: auto;
+}
+
+.wrap .timeline {
+  padding: 100px 0;
+}
+
+.wrap .timeline li {
+  position: relative;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0;
+}
+
+.wrap .timeline li::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #aaa;
+  content: "";
+}
+
+.wrap .timeline li:nth-child(odd) {
+  float: left;
+  padding-right: 100px;
+}
+
+.wrap .timeline li:nth-child(odd)::before {
+  right: -10px;
+}
+
+.wrap .timeline li:nth-child(odd)::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  content: "";
+}
+
+.wrap .timeline li:nth-child(odd) h2::after {
+  right: 0;
+}
+
+.wrap .timeline li:nth-child(even) {
+  float: right;
+  padding-left: 100px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.wrap .timeline li:nth-child(even)::before {
+  left: -11px;
+}
+
+.wrap .timeline li:nth-child(even) h2::after {
+  left: 0;
+}
+
+.wrap .timeline li:last-child::after {
+  height: 50%;
+}
+
+.wrap .timeline li a {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px #888;
+          box-shadow: 3px 3px 5px #888;
+}
+
+.wrap .timeline li a:hover {
+  background-color: #6fa5f6;
+}
+
+.wrap .timeline li a:hover h2,
+.wrap .timeline li a:hover p {
+  color: #fff;
+}
+
+.wrap .timeline li a h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+.wrap .timeline li a h2::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100px;
+  margin: auto;
+  background-color: #aaa;
+  content: "";
+}
+
+.wrap .timeline li a p {
+  color: #666;
+  font-weight: 100;
+}
+/*# sourceMappingURL=style.css.map */

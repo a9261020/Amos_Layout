@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+.dialogue .remote .txt::before, .dialogue .local .txt::before {
+  position: absolute;
+  top: 20px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #afc7d1;
+}
+
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px #3e92cc;
+          box-shadow: 0 0 10px #3e92cc;
+  background-color: #fff;
+}
+
+.dialogue .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.dialogue .user .avatar {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+}
+
+.dialogue .user .avatar .pic {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dialogue .user .avatar .pic img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.dialogue .user .txt {
+  position: relative;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #aaa;
+}
+
+.dialogue .remote .txt {
+  margin-left: 20px;
+  margin-right: 80px;
+  background-color: #888;
+  color: #a1b4c5;
+}
+
+.dialogue .remote .txt::before {
+  border-right: 10px solid #888;
+  left: -10px;
+}
+
+.dialogue .local {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dialogue .local .txt {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  margin-right: 20px;
+  margin-left: 80px;
+  background-color: #3e92cc;
+  color: #fff;
+}
+
+.dialogue .local .txt::before {
+  border-left: 10px solid #3e92cc;
+  right: -10px;
+}
+/*# sourceMappingURL=style.css.map */

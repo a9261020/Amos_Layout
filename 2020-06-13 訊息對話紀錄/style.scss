@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+%txt-container {
+  position: absolute;
+  top: 20px;
+  border: {
+    top: 10px solid transparent;
+    bottom: 10px solid transparent;
+  }
+  content: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #afc7d1;
+}
+
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px #3e92cc;
+  background-color: #fff;
+  .user {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .avatar {
+      flex-shrink: 0; // ! flex的特性，會讓物件隨著內容縮小、放大，如果沒有這定這個屬性，在文字過多的時候，avatar區域就會被縮小。
+      width: 60px;
+      text-align: center;
+      .pic {
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          vertical-align: middle;
+        }
+      }
+    }
+    .txt {
+      position: relative;
+      padding: 16px;
+      border-radius: 10px;
+      background-color: #aaa;
+    }
+  }
+  .remote {
+    .txt {
+      margin-left: 20px;
+      margin-right: 80px;
+      background-color: #888;
+      color: #a1b4c5;
+      &::before {
+        @extend %txt-container;
+        border-right: 10px solid #888;
+        left: -10px;
+      }
+    }
+  }
+  .local {
+    justify-content: flex-end;
+    .txt {
+      order: -1;
+      margin-right: 20px;
+      margin-left: 80px;
+      background-color: #3e92cc;
+      color: #fff;
+      &::before {
+        @extend %txt-container;
+        border-left: 10px solid #3e92cc;
+        right: -10px;
+      }
+    }
+  }
+}

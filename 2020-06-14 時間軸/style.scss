@@ -16,6 +16,7 @@ body {
   margin: auto;
   .timeline {
     padding: 100px 0;
+    overflow: hidden;
     li {
       position: relative;
       width: 50%;

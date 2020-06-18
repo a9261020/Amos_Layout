@@ -17,6 +17,7 @@ body {
 
 .wrap .timeline {
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .wrap .timeline li {

@@ -41,433 +41,433 @@
 // * 版面2
 // * 將h1設定為float，而且要把container的flex拿掉
 // ! 如果用column的話就沒辦法吃到float，所以要把column設定拿掉
-// .wrap {
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     padding: 100px 0;
-//     h1 {
-//       float: left;
-//       width: 300px;
-//       margin-right: 0.5em;
-//       padding: 15px;
-//       border-right: 3px solid #000;
-//       box-sizing: border-box;
-//       font-size: 42px;
-//       text-align: right;
-//     }
-//     .txt {
-//       padding: 0 15px;
-//       box-sizing: border-box;
-//     }
-//   }
-// }
+.wrap1 {
+  .container {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    h1 {
+      float: left;
+      width: 300px;
+      margin-right: 0.5em;
+      padding: 15px;
+      border-right: 3px solid #000;
+      box-sizing: border-box;
+      font-size: 42px;
+      text-align: right;
+    }
+    .txt {
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+}
 
 // * 版面3
-// .wrap {
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     padding: 100px 0;
-//     h1 {
-//       position: relative;
-//       margin-bottom: 30px;
-//       padding: 0 15px;
-//       box-sizing: border-box;
-//       font-size: 90px;
-//       color: #aaa;
-//       &::after {
-//         position: absolute;
-//         display: block;
-//         bottom: 0;
-//         z-index: -1;
-//         width: 100%;
-//         height: 70px;
-//         background-color: #eee;
-//         content: "";
-//       }
-//     }
-//     .txt {
-//       padding: 0 15px;
-//       box-sizing: border-box;
-//       column-count: 2;
-//       column-gap: 30px;
-//       p {
-//         &::first-letter {
-//           font-size: 60px;
-//           float: left;
-//           padding-right: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
+.wrap2 {
+  .container {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    h1 {
+      position: relative;
+      margin-bottom: 30px;
+      padding: 0 15px;
+      box-sizing: border-box;
+      font-size: 90px;
+      color: #aaa;
+      &::after {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 70px;
+        background-color: #eee;
+        content: "";
+      }
+    }
+    .txt {
+      padding: 0 15px;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 30px;
+      p {
+        &::first-letter {
+          font-size: 60px;
+          float: left;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面4
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     position: relative;
-//     h1 {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 400px;
-//       box-sizing: border-box;
-//       padding: 15px;
-//       background-color: #aaa;
-//       position: absolute;
-//       top: 0;
-//       right: 0;
-//       bottom: 0;
-//       left: 0;
-//       margin: auto;
-//       text-align: center;
-//     }
-//     .txt {
-//   column-count: 2;
-//   column-gap: 460px;
-//   p {
-//     line-height: 1.6;
-//     margin-bottom: 1em;
-// &::first-child::first-letter {
-//   font-size: 40px;
-//   float: left;
-//   padding-right: 6px;
-// }
-//   }
-// }
-//   }
-// }
+.wrap3 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: #aaa;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
+    .txt {
+      column-count: 2;
+      column-gap: 460px;
+      p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+        &::first-child::first-letter {
+          font-size: 40px;
+          float: left;
+          padding-right: 6px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面5
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     position: relative;
-//     h1 {
-//       position: relative;
-//       width: 400px;
-//       font-size: 90px;
-//       box-sizing: border-box;
-//       padding: 15px;
-//       float: right;
-//       color: #aaa;
-//       &::before {
-//         position: absolute;
-//         z-index: -1;
-//         width: 200px;
-//         height: 200px;
-//         border: 30px solid #eee;
-//         content: "";
-//       }
-//     }
-//     .txt {
-//       column-count: 2;
-//       column-gap: 30px;
-//       p {
-//         line-height: 1.6;
-//         margin-bottom: 1em;
-//       }
-//     }
-//   }
-// }
+.wrap4 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    h1 {
+      position: relative;
+      width: 400px;
+      font-size: 90px;
+      box-sizing: border-box;
+      padding: 15px;
+      float: right;
+      color: #aaa;
+      &::before {
+        position: absolute;
+        z-index: -1;
+        width: 200px;
+        height: 200px;
+        border: 30px solid #eee;
+        content: "";
+      }
+    }
+    .txt {
+      column-count: 2;
+      column-gap: 30px;
+      p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
 
 // * 版面6
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     position: relative;
-//     h1 {
-//       position: relative;
-//       width: 400px;
-//       font-size: 90px;
-//       box-sizing: border-box;
-//       padding: 15px;
-//       float: right;
-//       color: #aaa;
-//       &::before {
-//         position: absolute;
-//         bottom: 0;
-//         z-index: -1;
-//         width: 200px;
-//         height: 200px;
-//         border: 30px solid #f1c555;
-//         transform: rotate(20deg);
-//         content: "";
-//       }
-//     }
-//     .txt {
-//       column-count: 2;
-//       column-gap: 30px;
-//       p {
-//         line-height: 1.6;
-//         margin-bottom: 1em;
-//       }
-//     }
-//   }
-// }
+.wrap5 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    h1 {
+      position: relative;
+      width: 400px;
+      font-size: 90px;
+      box-sizing: border-box;
+      padding: 15px;
+      float: right;
+      color: #aaa;
+      &::before {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        width: 200px;
+        height: 200px;
+        border: 30px solid #f1c555;
+        transform: rotate(20deg);
+        content: "";
+      }
+    }
+    .txt {
+      column-count: 2;
+      column-gap: 30px;
+      p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
 
 // * 版面7
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     display: flex;
-//     h1 {
-//       position: relative;
-//       width: 400px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       order: 1;
-//       font-size: 90px;
-//       padding-left: 15px;
-//       color: #aaa;
-//       &::before {
-//         content: "";
-//         position: absolute;
-//         width: 200px;
-//         height: 200px;
-//         top: 0;
-//         left: 0;
-//         border: 30px solid #f1b444;
-//         transform: rotate(10deg);
-//         z-index: -1;
-//       }
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         width: 200px;
-//         height: 200px;
-//         top: 0;
-//         left: 0;
-//         border: 30px solid #f1c555;
-//         transform: rotate(17deg);
-//         z-index: -1;
-//       }
-//     }
-//     .txt {
-//       width: 800px;
-//       padding: 15px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       column-count: 2;
-//       column-gap: 30px;
-//       box-shadow: 0 0 30px #ccc;
-//       p {
-//         margin-bottom: 1em;
-//         &:first-child::first-letter {
-//           font-size: 60px;
-//           float: left;
-//           padding-right: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
+.wrap6 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    h1 {
+      position: relative;
+      width: 400px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      order: 1;
+      font-size: 90px;
+      padding-left: 15px;
+      color: #aaa;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        border: 30px solid #f1b444;
+        transform: rotate(10deg);
+        z-index: -1;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        border: 30px solid #f1c555;
+        transform: rotate(17deg);
+        z-index: -1;
+      }
+    }
+    .txt {
+      width: 800px;
+      padding: 15px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 30px;
+      box-shadow: 0 0 30px #ccc;
+      p {
+        margin-bottom: 1em;
+        &:first-child::first-letter {
+          font-size: 60px;
+          float: left;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面8
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     display: flex;
-//     h1 {
-//       width: 400px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       font-size: 55px;
-//       padding-left: 15px;
-//       color: #aaa;
-//       // * transform 如果沒設定轉的方位，會以中心點去做旋轉，所以轉完之後有可能會蓋到旁邊的元素，所以才要做接下來的設定，不能只用rotate(90deg)
-//       transform: rotate(90deg);
-//       transform-origin: left top; // * 設定已以哪為中心做旋轉
-//       position: relative;
-//       left: 400px;
-//     }
-//     .txt {
-//       width: 800px;
-//       padding: 15px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       column-count: 2;
-//       column-gap: 30px;
-//       box-shadow: 0 0 30px #ccc;
-//       p {
-//         margin-bottom: 1em;
-//         &:first-child::first-letter {
-//           font-size: 60px;
-//           float: left;
-//           padding-right: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
+.wrap7 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    h1 {
+      width: 400px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      font-size: 55px;
+      padding-left: 15px;
+      color: #aaa;
+      // * transform 如果沒設定轉的方位，會以中心點去做旋轉，所以轉完之後有可能會蓋到旁邊的元素，所以才要做接下來的設定，不能只用rotate(90deg)
+      transform: rotate(90deg);
+      transform-origin: left top; // * 設定已以哪為中心做旋轉
+      position: relative;
+      left: 400px;
+    }
+    .txt {
+      width: 800px;
+      padding: 15px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 30px;
+      box-shadow: 0 0 30px #ccc;
+      p {
+        margin-bottom: 1em;
+        &:first-child::first-letter {
+          font-size: 60px;
+          float: left;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面9
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     display: flex;
-//     justify-content: flex-end;
-//     box-shadow: 0 0 30px #ccc;
-//     position: relative;
-//     overflow: hidden;
-//     h1 {
-//       width: 100%;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       font-size: 220px;
-//       padding-left: 15px;
-//       color: #ddd;
-//       position: absolute;
-//       top: -70px;
-//       left: 0;
-//       line-height: 0.8em;
-//       // * opacity: 0.2; 如果不用opacity就把.txt提出第一層
-//     }
-//     .txt {
-//       width: 600px;
-//       padding: 15px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       column-count: 2;
-//       column-gap: 30px;
-//       // * 如果不提出來就用opacity
-//       position: relative;
-//       z-index: 1;
-//       p {
-//         margin-bottom: 1em;
-//         &:first-child::first-letter {
-//           font-size: 60px;
-//           float: left;
-//           padding-right: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
+.wrap8 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 30px #ccc;
+    position: relative;
+    overflow: hidden;
+    h1 {
+      width: 100%;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      font-size: 220px;
+      padding-left: 15px;
+      color: #ddd;
+      position: absolute;
+      top: -70px;
+      left: 0;
+      line-height: 0.8em;
+      // * opacity: 0.2; 如果不用opacity就把.txt提出第一層
+    }
+    .txt {
+      width: 600px;
+      padding: 15px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 30px;
+      // * 如果不提出來就用opacity
+      position: relative;
+      z-index: 1;
+      p {
+        margin-bottom: 1em;
+        &:first-child::first-letter {
+          font-size: 60px;
+          float: left;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面10
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     display: flex;
-//     justify-content: flex-end;
-//     box-shadow: 0 0 30px #ccc;
-//     position: relative;
-//     overflow: hidden;
-//     h1 {
-//       width: 100%;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       font-size: 220px;
-//       padding-left: 15px;
-//       color: #fff;
-//       position: absolute;
-//       top: -70px;
-//       left: 0;
-//       line-height: 0.8em;
-//       text-shadow: 10px 10px 0 #ccc;
-//       // * opacity: 0.2; 如果不用opacity就把.txt提出第一層
-//     }
-//     .txt {
-//       width: 600px;
-//       padding: 15px;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       column-count: 2;
-//       column-gap: 30px;
-//       // * 如果不提出來就用opacity
-//       position: relative;
-//       z-index: 1;
-//       p {
-//         margin-bottom: 1em;
-//         &:first-child::first-letter {
-//           font-size: 60px;
-//           float: left;
-//           padding-right: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
+.wrap9 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 0 30px #ccc;
+    position: relative;
+    overflow: hidden;
+    h1 {
+      width: 100%;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      font-size: 220px;
+      padding-left: 15px;
+      color: #fff;
+      position: absolute;
+      top: -70px;
+      left: 0;
+      line-height: 0.8em;
+      text-shadow: 10px 10px 0 #ccc;
+      // * opacity: 0.2; 如果不用opacity就把.txt提出第一層
+    }
+    .txt {
+      width: 600px;
+      padding: 15px;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      column-count: 2;
+      column-gap: 30px;
+      // * 如果不提出來就用opacity
+      position: relative;
+      z-index: 1;
+      p {
+        margin-bottom: 1em;
+        &:first-child::first-letter {
+          font-size: 60px;
+          float: left;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
 
 // * 版面11
-// .wrap {
-//   margin: 100px 0;
-//   .container {
-//     width: 1200px;
-//     margin: auto;
-//     text-align: center;
-//     h1 {
-//       // display: flex;
-//       // align-items: center;
-//       width: 100%;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       font-size: 70px;
-//       color: #a00;
-//       // border-top: 1px solid #aaa;
-//       // border-bottom: 1px solid #aaa;
-//       margin-bottom: 0.5em;
-//       // &::before,
-//       // &::after {
-//       //   content: "";
-//       //   flex-grow: 1; // * 設定之後會自動填滿
-//       //   display: block;
-//       //   // * width: 2em; 設定flex-grow之後就不需要width了
-//       //   height: 5px;
-//       //   background-color: #aaa;
-//       //   margin: auto;
-//       // }
-//       // &::before {
-//       //   margin-right: 0.5em;
-//       // }
-//       // &::after {
-//       //   margin-left: 0.5em;
-//       // }
-//     }
-//     .txt {
-//       position: relative;
-//       flex-shrink: 0;
-//       box-sizing: border-box;
-//       padding: 1em;
-//       // &::before,
-//       // &::after {
-//       //   content: "";
-//       //   position: absolute;
-//       //   width: 50px;
-//       //   height: 50px;
-//       // }
-//       // &::before {
-//       //   left: 0;
-//       //   top: 0;
-//       //   border-top: 3px solid #aaa;
-//       //   border-left: 3px solid #aaa;
-//       // }
-//       // &::after {
-//       //   right: 0;
-//       //   bottom: 0;
-//       //   border-right: 3px solid #aaa;
-//       //   border-bottom: 3px solid #aaa;
-//       // }
-//       p {
-//         margin-bottom: 1em;
-//       }
-//     }
-//   }
-// }
+.wrap10 {
+  margin: 100px 0;
+  .container {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    h1 {
+      // display: flex;
+      // align-items: center;
+      width: 100%;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      font-size: 70px;
+      color: #a00;
+      // border-top: 1px solid #aaa;
+      // border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+      &::before,
+      &::after {
+        content: "";
+        // flex-grow: 1; // * 設定之後會自動填滿
+        display: block;
+        // * width: 2em; 設定flex-grow之後就不需要width了
+        height: 5px;
+        background-color: #aaa;
+        margin: auto;
+      }
+      &::before {
+        margin-right: 0.5em;
+      }
+      &::after {
+        margin-left: 0.5em;
+      }
+    }
+    .txt {
+      position: relative;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      padding: 1em;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+      &::before {
+        left: 0;
+        top: 0;
+        border-top: 3px solid #aaa;
+        border-left: 3px solid #aaa;
+      }
+      &::after {
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid #aaa;
+        border-bottom: 3px solid #aaa;
+      }
+      p {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
